@@ -11,13 +11,14 @@ const Experience = () => {
       <PresentationControls
         speed={1.5}
         global
-        polar={[-0.1, Math.PI / 4]}
+        polar={[-0.1, Math.PI / -2]}
         rotation={[Math.PI / 8, Math.PI / 4, 0]}
       >
         <Stage environment="city" intensity={0.6} castShadow={false}>
           <Chair />
         </Stage>
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position-y={-2}>
+        <mesh rotation={[-Math.PI / 2, 0, 0]} 
+          position-y={-2}>
           <planeGeometry args={[170, 170]} />
           <MeshReflectorMaterial
             blur={[300, 100]}
@@ -28,7 +29,7 @@ const Experience = () => {
             depthScale={1.2}
             minDepthThreshold={0.4}
             maxDepthThreshold={1.4}
-            color="#101010"
+            color="#505050"
             metalness={0.5}
           />
         </mesh>

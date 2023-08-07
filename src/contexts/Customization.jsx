@@ -68,6 +68,10 @@ const cushionColors = [
     color: "#ececec",
     name: "white",
   },
+  {
+    color: "#ececec",
+    name: "red",
+  },
 ];
 
 const CustomizationContext = createContext({});
